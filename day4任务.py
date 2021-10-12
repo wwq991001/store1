@@ -7,22 +7,22 @@ dict = {'地球': {'中国': {'北京': {'昌平': {'沙河': {'起码路': '北
 name = []
 name.append(input("输入键："))
 if name[0] in dict:
-    print(dict['地球'])
+    print(dict[name[0]])
     name.append(input("输入键："))
     if name[1] in dict['地球']:
-        print(dict['地球']['中国'])
+        print(dict['地球'][name[1]])
         name.append(input("输入键："))
         if name[2] in dict['地球']['中国']:
-            print(dict['地球']['中国']['北京'])
+            print(dict['地球']['中国'][name[2]])
             name.append(input("输入键："))
             if name[3] in dict['地球']['中国']['北京']:
-                print(dict['地球']['中国']['北京']['昌平'])
+                print(dict['地球']['中国']['北京'][name[3]])
                 name.append(input("输入键："))
                 if name[4] in dict['地球']['中国']['北京']['昌平']:
-                    print(dict['地球']['中国']['北京']['昌平']['沙河'])
+                    print(dict['地球']['中国']['北京']['昌平'][name[4]])
                     name.append(input("输入键："))
                     if name[5] in dict['地球']['中国']['北京']['昌平']['沙河']:
-                        print(dict['地球']['中国']['北京']['昌平']['沙河']['起码路'])
+                        print(dict['地球']['中国']['北京']['昌平']['沙河'][name[5]])
                     else:
                         print('no')
                 else:
