@@ -48,7 +48,7 @@ def type_logic(typ):
         return '普通卡'
 
 
-# 数字不能为空
+# 输入内容不能为空
 def add(void):
     if len(void) == 0:
         return True
