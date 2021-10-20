@@ -48,6 +48,13 @@ def type_logic(typ):
         return '普通卡'
 
 
+# 数字不能为空
+def add(void):
+    if len(void) == 0:
+        return True
+    return False
+
+
 # 自动生成账号
 def getRandom():
     li = "0123456789qwertyuiopasdfghjklzxcvbnmZXCVBNMASDFGHJKLQWERTYUIOP"
@@ -163,6 +170,9 @@ def user():
     while True:
         account = getRandom()
         username = input("请输入姓名")
+        if add(username):
+            print('数据不能为空！')
+            continue
         while True:
             password = input('请输入密码：')
             if password.isdigit() and len(password) == 6:
@@ -180,9 +190,21 @@ def user():
                 print('请不要瞎输！')
         print('请输入地址：')
         nationality = input('    国家：')
+        if add(nationality):
+            print('数据不能为空！')
+            continue
         province = input('    省份：')
+        if add(province):
+            print('数据不能为空！')
+            continue
         street = input('    街道：')
+        if add(street):
+            print('数据不能为空！')
+            continue
         number = input('    门牌号：')
+        if add(number):
+            print('数据不能为空！')
+            continue
         while True:
             money = input('请输入开户预存余额：')
             if money.isdigit():
@@ -267,6 +289,7 @@ def teller():
             print('不要瞎输入!')
             break
 
+
 # 转账操作
 def transfer():
     while True:
@@ -299,6 +322,7 @@ def transfer():
         else:
             print('不要瞎输入!')
             break
+
 
 # 查询操作
 def inquire():
@@ -337,6 +361,7 @@ while True:
     elif ordinal == '5':
         inquire()
     elif ordinal == '6':
+        print('欢迎下次再来找你银行爸爸！')
         break
     else:
         print('不要瞎输入！')
