@@ -102,6 +102,7 @@ class cook_dinner(fry_cook):
 cook = cook_dinner()
 cook.set_username("张三")
 cook.set_age(20)
+print(cook.get_username(), cook.get_age())
 cook.cook()
 cook.fry()
 cook.age()
