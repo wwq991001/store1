@@ -8,7 +8,6 @@ cashier = 0
 
 class User:
     __username = ""
-    __username1 = ""
     egg = 0
     dim = 0
     began = time.perf_counter()
