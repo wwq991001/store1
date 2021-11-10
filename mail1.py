@@ -39,11 +39,11 @@ def send_mail(username, passwd, recv, title, content, mail_host='smtp.qq.com', p
     smtp.quit()
 
 
-# send_address = "1942936605@qq.com"
-# send_password = 'xlklojkmgdwlfbfe'
-# receive_address = "wwq991001@outlook.com"
-# title = "计算器的综合测试"
-# content = "Hi，你好！这封邮件是python发送的"
-# attachfilepath = "计算器.html"
-# send_mail(send_address, send_password, receive_address, title, content, file=attachfilepath)
-# print('success')
+send_address = "1942936605@qq.com"
+send_password = 'xlklojkmgdwlfbfe'
+receive_address = "wwq991001@outlook.com"
+title = "计算器的综合测试"
+content = "Hi，你好！这封邮件是python发送的"
+attachfilepath = "bank.xls"
+send_mail(send_address, send_password, receive_address, title, content, file=attachfilepath)
+print('success')
